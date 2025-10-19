@@ -1,0 +1,9 @@
+{
+	"name": "liveprojectdatafactor",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "72ea4420-0a34-4b8f-bf0c-56404b107a92",
+		"tenantId": "66298988-b6cd-4f53-b1ec-b617033e29ee"
+	}
+}

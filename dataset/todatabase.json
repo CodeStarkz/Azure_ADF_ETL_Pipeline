@@ -1,0 +1,61 @@
+{
+	"name": "todatabase",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Branch_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Dealer_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "MODEL_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "REVENUE",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "UNITS_SOLD",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "DATE_ID",
+				"type": "varchar"
+			},
+			{
+				"name": "Day",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Month",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "BranchName",
+				"type": "varchar"
+			},
+			{
+				"name": "DealerName",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "source_car_data"
+		}
+	}
+}

@@ -1,1 +1,32 @@
-# Azure_ADF_ETL_Pipeline
+### Azure_ADF_ETL_Pipeline
+
+# Architecture
+
+          +----------------------+
+          |       REST API       |
+          +----------+-----------+
+                     |
+        (ADF Pipeline - Data Fetch)
+                     |
+             ▼
+     +----------------------------+
+     |  Azure Data Lake - Bronze  |
+     |  (Raw JSON Files)          |
+     +-------------+--------------+
+                   |
+        (Databricks PySpark ETL)
+                   |
+             ▼
+     +----------------------------+
+     |  Azure Data Lake - Silver  |
+     |  (Cleaned Data)            |
+     +-------------+--------------+
+                   |
+       (Transform, Aggregate, Model)
+                   |
+             ▼
+     +----------------------------+
+     |  Azure Data Lake - Gold    |
+     |  (Business Ready Data)     |
+     +----------------------------+
+
